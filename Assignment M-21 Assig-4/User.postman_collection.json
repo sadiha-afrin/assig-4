@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "3f3f7d6a-8d51-46d8-b8a8-e685fde28d5f",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31314194"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Desha\",\r\n    \"lastName\":\"Das\",\r\n    \"NIDNumber\":\"123497341286\",\r\n    \"phoneNumber\":\"01516005166\",\r\n    \"password\":\"1234\",\r\n    \"bloodGroup\":\"A+\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://http://localhost:5000/api/Registration",
+					"protocol": "http",
+					"host": [
+						"http"
+					],
+					"port": "",
+					"path": [
+						"",
+						"localhost:5000",
+						"api",
+						"Registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NIDNumber\":\"123497341286\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjEyMzQiLCJOSUROdW1iZXIiOiIxMjM0OTczNDEyIiwiaWF0IjoxNzM0MTEzOTc3LCJleHAiOjE3MzY3MDU5Nzd9.7TRPtqQzUmgG5mqqQilvoeeC14vmHZjcqEE5fLYNCfw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NIDNumber\":\"123497341286\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ReadProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ReadProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadAllProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjEyMzQiLCJOSUROdW1iZXIiOiIxMjM0OTczNDEyIiwiaWF0IjoxNzM0MTEzOTc3LCJleHAiOjE3MzY3MDU5Nzd9.7TRPtqQzUmgG5mqqQilvoeeC14vmHZjcqEE5fLYNCfw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NIDNumber\":\"123497341286\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ReadAllProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ReadAllProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjEyMzQiLCJOSUROdW1iZXIiOiIxMjM0OTczNDEyIiwiaWF0IjoxNzM0MTEzOTc3LCJleHAiOjE3MzY3MDU5Nzd9.7TRPtqQzUmgG5mqqQilvoeeC14vmHZjcqEE5fLYNCfw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"password\":\"4444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/UpdateProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"UpdateProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjEyMzQiLCJOSUROdW1iZXIiOiIxMjM0OTczNDEyIiwiaWF0IjoxNzM0MTEzOTc3LCJleHAiOjE3MzY3MDU5Nzd9.7TRPtqQzUmgG5mqqQilvoeeC14vmHZjcqEE5fLYNCfw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"password\":\"4444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/DeleteProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"DeleteProfile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
